@@ -22,7 +22,7 @@ public partial class LandingPageViewModel : BaseViewModel
         PageIntro = "A C# library as an emulator for an old phone keypad to translate the input string of digits, spaces, asterisks, or routes into a resulting output for sending over a phone.";
 
         InfoTitle = "Description";
-        PageInfo = "A C# library as an emulator for an old phone keypad to translate the input string of digits, spaces, asterisks, or routes into a resulting output for sending over a phone.";
+        PageInfo = "This application is an additional implementation, based on the emulator dll from the “old-phone-keypad-emulator” project and is intended to show the implementation as a cross platform solution. \n\nIt points the implementation technics: \n\n - Cross platform solution with MAUI Framework \n - MVVM pattern \n - Micro services \n - Custom controls \n - Dependency injection \n - Platform specific styles for each platform \n - Unit testing with NUnit \n - Unit testing a MAUI Application \n - Test cases for Service execution test \n - Test cases for Command execution test";
     }
 
     /// <summary>
