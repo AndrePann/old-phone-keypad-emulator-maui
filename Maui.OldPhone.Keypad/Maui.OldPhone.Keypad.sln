@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Maui.OldPhone.Keypad.Emulator", "Maui.OldPhone.Keypad.Emulator\Maui.OldPhone.Keypad.Emulator.csproj", "{48F00A47-B39C-4A2B-BFFD-37B63B2295EC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Maui.OldPhone.Keypad.Emulator.Demo", "Maui.OldPhone.Keypad.Emulator.Demo\Maui.OldPhone.Keypad.Emulator.Demo.csproj", "{7E0C72EF-23A1-46FB-ADEC-85F43D56353E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Maui.OldPhone.Keypad.Emulator.Demo.Test", "Maui.OldPhone.Keypad.Emulator.Demo.Test\Maui.OldPhone.Keypad.Emulator.Demo.Test.csproj", "{621CD8B9-D4A8-4ABF-B730-6856F5CAB89E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Maui.OldPhone.Keypad.Emulator.Test", "Maui.OldPhone.Keypad.Emulator.Test\Maui.OldPhone.Keypad.Emulator.Test.csproj", "{60966D37-A246-41B7-BAAD-77E23EE01DEE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{48F00A47-B39C-4A2B-BFFD-37B63B2295EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48F00A47-B39C-4A2B-BFFD-37B63B2295EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48F00A47-B39C-4A2B-BFFD-37B63B2295EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48F00A47-B39C-4A2B-BFFD-37B63B2295EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E0C72EF-23A1-46FB-ADEC-85F43D56353E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E0C72EF-23A1-46FB-ADEC-85F43D56353E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E0C72EF-23A1-46FB-ADEC-85F43D56353E}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{7E0C72EF-23A1-46FB-ADEC-85F43D56353E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E0C72EF-23A1-46FB-ADEC-85F43D56353E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E0C72EF-23A1-46FB-ADEC-85F43D56353E}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{621CD8B9-D4A8-4ABF-B730-6856F5CAB89E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{621CD8B9-D4A8-4ABF-B730-6856F5CAB89E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{621CD8B9-D4A8-4ABF-B730-6856F5CAB89E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{621CD8B9-D4A8-4ABF-B730-6856F5CAB89E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60966D37-A246-41B7-BAAD-77E23EE01DEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60966D37-A246-41B7-BAAD-77E23EE01DEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60966D37-A246-41B7-BAAD-77E23EE01DEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60966D37-A246-41B7-BAAD-77E23EE01DEE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
