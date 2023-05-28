@@ -6,8 +6,15 @@ using Microsoft.Extensions.Logging;
 
 namespace Maui.OldPhone.Keypad.Emulator.Demo
 {
+    /// <summary>
+    /// maui program as entry point for the application
+    /// </summary>
     public static class MauiProgram
     {
+        /// <summary>
+        /// create maui app as entry point
+        /// </summary>
+        /// <returns></returns>
         public static MauiApp CreateMauiApp()
         {
             var builder = MauiApp.CreateBuilder();

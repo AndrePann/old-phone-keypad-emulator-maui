@@ -2,8 +2,14 @@
 
 namespace Maui.OldPhone.Keypad.Emulator.Demo
 {
+    /// <summary>
+    /// shell class
+    /// </summary>
     public partial class AppShell : Shell
     {
+        /// <summary>
+        /// constructor
+        /// </summary>
         public AppShell()
         {
             InitializeComponent();

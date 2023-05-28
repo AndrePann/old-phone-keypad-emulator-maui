@@ -1,5 +1,8 @@
 namespace Maui.OldPhone.Keypad.Emulator.Demo.Models;
 
+/// <summary>
+/// predefined sample data enum
+/// </summary>
 public enum AppPreDefinedSample
 {
     Sample_One = 0,

@@ -3,15 +3,37 @@ using Maui.OldPhone.Keypad.Emulator.Demo.Models;
 
 namespace Maui.OldPhone.Keypad.Emulator.Demo.Services;
 
+/// <summary>
+/// implementation of the emulator service class
+/// </summary>
 public class EmulatorService : ObservableObject, IEmulatorService
 {
+    #region fields
+    private EmulatorService _instance;
+    private PreDefinedSample _preDefinedSampleData;
+    private string _inputValue;
+    private SampleData _sample;
+
+    #endregion // fields
+
+    #region ctor
+
+    /// <summary>
+    /// constructor with initialisation
+    /// </summary>
     public EmulatorService()
     {
         PreDefinedSampleData = new PreDefinedSample();
         Sample = PreDefinedSampleData.Get(AppPreDefinedSample.Sample_One);
     }
 
-    private EmulatorService _instance;
+    #endregion // ctor
+
+    #region properties
+
+    /// <summary>
+    /// emulator service instance object
+    /// </summary>
     public EmulatorService Instance
     {
         get => _instance ??= new EmulatorService();
@@ -25,7 +47,9 @@ public class EmulatorService : ObservableObject, IEmulatorService
         }
     }
 
-    private PreDefinedSample _preDefinedSampleData;
+    /// <summary>
+    /// predefinted sample data object
+    /// </summary>
     public PreDefinedSample PreDefinedSampleData
     {
         get => _preDefinedSampleData;
@@ -38,7 +62,9 @@ public class EmulatorService : ObservableObject, IEmulatorService
         }
     }
 
-    private string _inputValue;
+    /// <summary>
+    /// input value 
+    /// </summary>
     public string InputValue
     {
         get => _inputValue;
@@ -51,7 +77,9 @@ public class EmulatorService : ObservableObject, IEmulatorService
         }
     }
 
-    private SampleData _sample;
+    /// <summary>
+    /// sample data object
+    /// </summary>
     public SampleData Sample
     {
         get => _sample;
@@ -64,10 +92,21 @@ public class EmulatorService : ObservableObject, IEmulatorService
         }
     }
 
+    #endregion // properties
+
+    #region methods
+
+    /// <summary>
+    /// parse input data method
+    /// </summary>
+    /// <param name="inputData">input string</param>
+    /// <returns>parsed output or error info</returns>
     public string ParseInputData(string inputData)
     {
         var output = OldPhone.OldPhonePad(inputData);
 
         return output;
     }
+
+    #endregion // methods
 }
