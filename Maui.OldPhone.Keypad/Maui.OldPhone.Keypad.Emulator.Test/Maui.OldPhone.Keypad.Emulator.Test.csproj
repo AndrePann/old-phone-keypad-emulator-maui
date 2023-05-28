@@ -17,4 +17,8 @@
     <PackageReference Include="coverlet.collector" Version="3.2.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Maui.OldPhone.Keypad.Emulator\Maui.OldPhone.Keypad.Emulator.csproj" />
+  </ItemGroup>
+
 </Project>
