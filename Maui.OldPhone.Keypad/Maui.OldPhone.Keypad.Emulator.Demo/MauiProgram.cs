@@ -1,4 +1,8 @@
-﻿using Microsoft.Extensions.Logging;
+﻿using CommunityToolkit.Maui;
+using Maui.OldPhone.Keypad.Emulator.Demo.Services;
+using Maui.OldPhone.Keypad.Emulator.Demo.ViewModels;
+using Maui.OldPhone.Keypad.Emulator.Demo.Views;
+using Microsoft.Extensions.Logging;
 
 namespace Maui.OldPhone.Keypad.Emulator.Demo
 {
@@ -9,6 +13,7 @@ namespace Maui.OldPhone.Keypad.Emulator.Demo
             var builder = MauiApp.CreateBuilder();
             builder
                 .UseMauiApp<App>()
+                .UseMauiCommunityToolkit()
                 .ConfigureFonts(fonts =>
                 {
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
@@ -18,6 +23,18 @@ namespace Maui.OldPhone.Keypad.Emulator.Demo
 #if DEBUG
 		builder.Logging.AddDebug();
 #endif
+
+            // service registration
+            builder.Services.AddSingleton<INavigationService, NavigationService>();
+            builder.Services.AddSingleton<IEmulatorService, EmulatorService>();
+
+            // view registration
+            builder.Services.AddSingleton<LandingPage>();
+            builder.Services.AddSingleton<ParserDemoPage>();
+
+            // view model registration
+            builder.Services.AddSingleton<LandingPageViewModel>();
+            builder.Services.AddSingleton<ParserDemoPageViewModel>();
 
             return builder.Build();
         }

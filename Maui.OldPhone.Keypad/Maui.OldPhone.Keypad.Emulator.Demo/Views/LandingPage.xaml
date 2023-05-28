@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="Maui.OldPhone.Keypad.Emulator.Demo.Views.LandingPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:controls="clr-namespace:Maui.OldPhone.Keypad.Emulator.Demo.Controls"
+    xmlns:viewModels="clr-namespace:Maui.OldPhone.Keypad.Emulator.Demo.ViewModels"
+    Title="{Binding PageTitle}"
+    x:DataType="viewModels:LandingPageViewModel">
+
+    <Grid>
+        <ScrollView>
+            <VerticalStackLayout>
+
+                <!--  Custom Control >>> Head line info card  -->
+                <controls:OldPhoneInfoCardControl
+                    Title="{Binding IntroTitle}"
+                    Padding="0,5,0,0"
+                    HorizontalOptions="Center"
+                    Info="{Binding PageIntro}"
+                    VerticalOptions="Center"
+                    WidthRequest="370" />
+
+                <!--  Custom Control >>> User info  -->
+                <controls:OldPhoneInfoCardControl
+                    Title="{Binding InfoTitle}"
+                    Padding="0,5,0,0"
+                    HorizontalOptions="Center"
+                    Info="{Binding PageInfo}"
+                    VerticalOptions="Center"
+                    WidthRequest="370" />
+
+                <!--  Navigation  -->
+                <HorizontalStackLayout
+                    Padding="0,5,0,5"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center">
+
+                    <Button
+                        Command="{Binding NavigateToCommand}"
+                        HorizontalOptions="Center"
+                        Style="{StaticResource OldPhoneButton}"
+                        Text="Parser demo"
+                        WidthRequest="370" />
+
+                </HorizontalStackLayout>
+
+            </VerticalStackLayout>
+        </ScrollView>
+    </Grid>
+
+</ContentPage>
