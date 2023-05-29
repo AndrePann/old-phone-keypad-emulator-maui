@@ -6,6 +6,30 @@ A C# library as an emulator for an old phone keypad to translate the input strin
 ## Introduction
 This application is an additional implementation, based on the emulator dll from the “old-phone-keypad-emulator” project and is intended to show the implementation as a cross platform solution.
 
+<table>
+  <tr>
+     <td>Windows app landing page</td>
+     <td>Windows app parser demo</td>
+  </tr>
+  <tr>
+    <td><img src="docs/images/WindowsApp.JPG" width=400 ></td>
+    <td><img src="docs/images/WindowsAppDemo.JPG" width=400 ></td>
+  </tr>
+ </table>
+ 
+ 
+ <table>
+  <tr>
+     <td>Android app landing page</td>
+     <td>Android app parser demo</td>
+  </tr>
+  <tr>
+    <td><img src="docs/images/AndroidApp.JPG" width=300 ></td>
+    <td><img src="docs/images/AndroidAppDemo.JPG" width=300 ></td>
+  </tr>
+ </table>
+
+
 ## System requirements
 * Visual Studio 2022
 * .Net 7
